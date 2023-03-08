@@ -1,0 +1,7 @@
+@import '../variables/variables';
+
+@mixin labelForm(){
+    font-weight: 500; 
+    color: $text-color;
+    font-size: 18px;
+}

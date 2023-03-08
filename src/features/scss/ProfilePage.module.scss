@@ -1,0 +1,75 @@
+@import "./components/_components.scss";
+@import "./mixin/mixin";
+@import "./variables/variables";
+
+
+.profilePage{
+    .formContainer {
+        &::after {
+            content: "";
+            position: absolute;
+            height: 100vh;
+            width: 100%;
+            background: rgb(64, 81, 59);
+            background: linear-gradient(
+                122deg,
+                rgba(64, 81, 59, 1) 7%,
+                rgba(96, 153, 102, 1) 57%,
+                rgba(237, 241, 214, 1) 88%,
+                rgba(237, 241, 214, 1) 88%
+            );
+            z-index: -1;
+        }
+        .container {
+            .formCover {
+                width: 30%;
+                position: absolute;
+                background-color: white;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border: 1px solid black;
+                padding: 50px;
+                border-radius: 20px;
+                -webkit-box-shadow: 0px 9px 7px -1px rgba(0, 0, 0, 0.71);
+                box-shadow: 0px 9px 7px -1px rgba(0, 0, 0, 0.71);
+                @media  screen and (max-width:1200px) {
+                    width: 50%;
+                }
+    
+                @media  screen and (max-width:800px) {
+                    width: 60%;
+                }
+                @media  screen and (max-width:650px) {
+                    padding: 40px;
+                    width: 70%;
+                }
+    
+                @media  screen and (max-width:390px) {
+                    
+                    width: 80%;
+                }
+                .headerForm {
+                    margin-bottom: 30px;
+                    text-align: left;
+                }
+                .formControl {
+                    margin-top: 10px;
+                    .formLabel {
+                        @include labelForm;
+                    }
+                    .formInput {
+                        padding: 10px;
+                        font-size: 16px;
+                    }
+                }
+    
+    
+                .formBtn {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
