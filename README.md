@@ -49,3 +49,5 @@ The email should be correct with the email format.
 The phone number should be correct with the phone number format.
 
 The password  should have at least 8 characters.
+
+# Thanks for reading 
